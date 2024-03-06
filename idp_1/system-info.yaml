@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: etesoro
+  #annotations:
+    #backstage.io/techdocs-ref: url:https://github.com/backstage123/node-repo/tree/master
+    
+spec:
+  type: service
+  owner: user:default/mannaneng
+  lifecycle: production
+  dependsOn: 
+    - component:etesoro-backend
